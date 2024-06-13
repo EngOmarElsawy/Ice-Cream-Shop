@@ -1,0 +1,183 @@
+body {
+    background-image: url(../../../../../Images/Untitled-1.png);
+    background-size: cover;
+}
+
+#navv {
+    display: none;
+    /* position: absolute;
+    top: 0;
+    width: 100%; */
+}
+
+#preloader {
+    background: #fff url(../../../../../Images/preloader.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+#cart {
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+    opacity: 0.5;
+}
+
+#cart:hover {
+    opacity: 1;
+}
+
+.card {
+    background-color: #f9c8ba;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+.nav-item {
+    font-family: 'azo sans black';
+}
+
+.nav-item button {
+    color: white;
+    opacity: 0.5;
+}
+
+.nav-item button:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.nav-item button:hover {
+    color: darkviolet;
+}
+
+.nav-item .dropdown-menu {
+    height: 80px;
+}
+
+.nav-item .dropdown-menu .dropdown-item i {
+    padding: 10px;
+    margin: 20px;
+}
+
+#search {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+.mt-4 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+footer {
+    background-color: hotpink;
+}
+
+h2 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+img {
+    position: relative;
+    bottom: 15%;
+}
+
+p {
+    color: white;
+    font-family: sans-serif;
+}
+
+.whats {
+    color: #00e676;
+    padding: 10px;
+}
+
+.face {
+    color: #0d8cf0;
+    padding: 10px;
+}
+
+.insta {
+    color: #be33b2;
+    padding: 10px;
+}
+
+.whats:hover {
+    color: #00e676;
+    opacity: 0.8;
+}
+
+.face:hover {
+    color: #0d8cf0;
+    opacity: 0.8;
+}
+
+.insta:hover {
+    color: #be33b2;
+    opacity: 0.8;
+}
+
+title {
+    color: white;
+    background-color: darkviolet;
+}
+
+.social {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+}
+
+@media(max-width: 768px) {
+    .social {
+        position: relative;
+        top: 70%;
+        left: 50%;
+        width: 380px;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 3px;
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 992px) {
+    .social {
+        position: relative;
+        top: 70%;
+        left: 50%;
+        width: 380px;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: -3px;
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .social {
+        position: relative;
+        top: 70%;
+        left: 50%;
+        width: 380px;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: -3px;
+    }
+    body {
+        height: 1000px;
+    }
+}

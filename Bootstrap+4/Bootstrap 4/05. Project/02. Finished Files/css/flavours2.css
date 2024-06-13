@@ -1,0 +1,183 @@
+body {
+    background-image: url(../../../../../Images/Untitled-1.png);
+    background-size: cover;
+}
+
+#navv {
+    display: none;
+    /* position: absolute;
+    top: 0;
+    width: 100%; */
+}
+
+#preloader {
+    background: #fff url(../../../../../Images/preloader.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+#cart {
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+    opacity: 0.5;
+}
+
+#cart:hover {
+    opacity: 1;
+}
+
+.card {
+    background-color: #f9c8ba;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+.nav-item {
+    font-family: 'azo sans black';
+}
+
+.nav-item button {
+    color: white;
+    opacity: 0.5;
+}
+
+.nav-item button:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.nav-item button:hover {
+    color: darkviolet;
+}
+
+.nav-item .dropdown-menu {
+    height: 80px;
+}
+
+.nav-item .dropdown-menu .dropdown-item i {
+    padding: 10px;
+    margin: 20px;
+}
+
+#search {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+.my-4 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+.card-header {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+}
+
+.card-body {
+    color: hotpink;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card-footer {
+    text-align: center;
+    font-family: 'azo sans black';
+}
+
+.card-footer button {
+    color: white;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.btn {
+    background-color: hotpink;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+    box-shadow: hotpink;
+}
+
+footer {
+    background-color: hotpink;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.page-link {
+    color: hotpink;
+}
+
+.btn:hover {
+    color: blueviolet;
+}
+
+.login {
+    font-family: 'azo sans black';
+}
+
+.page-link:hover {
+    color: darkviolet;
+}
+
+.een {
+    font-size: 35px;
+}
+
+.dropdown-menu {
+    background-color: hotpink;
+    color: white;
+}
+
+.dropdown-menu:hover {
+    background-color: hotpink;
+    color: darkviolet;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    color: darkviolet;
+    background-color: hotpink;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.price1 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 38px;
+    font-family: 'Lato', sans-serif;
+}
+
+.price2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 52px;
+    font-family: 'Lato', sans-serif;
+}

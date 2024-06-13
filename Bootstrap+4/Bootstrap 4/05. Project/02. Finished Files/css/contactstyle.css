@@ -1,0 +1,125 @@
+body {
+    background-image: url(../../../../../Images/Untitled-1.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#preloader {
+    background: #fff url(../../../../../Images/preloader.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+
+#navv {
+    display: none;
+}
+
+.social a {
+    margin: 10px;
+}
+
+.social a:hover {
+    opacity: 0.8;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+.nav-link {
+    font-family: 'azo sans black';
+}
+
+.nav-item button {
+    color: white;
+    opacity: 0.5;
+}
+
+.nav-item button:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.nav-item button:hover {
+    color: darkviolet;
+}
+
+.nav-item .dropdown-menu {
+    height: 80px;
+}
+
+.nav-item .dropdown-menu .dropdown-item i {
+    padding: 10px;
+    margin: 20px;
+}
+
+input::placeholder {
+    color: rgb(129, 119, 119);
+    padding-left: 2px;
+}
+
+#search {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+#cart {
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+    opacity: 0.5;
+}
+
+#cart:hover {
+    opacity: 1;
+}
+
+.login {
+    font-family: 'azo sans black';
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+.nav-item {
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+@media(max-width:768px) {
+    iframe {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+h3 {
+    color: white;
+}
+
+.mt-4 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+label {
+    color: white
+}
+
+.qr-code {
+    width: 149px;
+    height: 100px;
+}

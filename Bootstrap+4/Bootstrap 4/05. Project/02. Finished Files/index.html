@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ice-Cream Shop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Style Made By Me  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="D:\Ice-Cream Shop\fontawesome-free-5.15.3-web\css\all.min.css">
+    <!--  Fonts  -->
+    <link rel="stylesheet" href="D:\Ice-Cream Shop\Fonts\fonts.css">
+    <!-- Arabic Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap" rel="stylesheet">
+    <!--Chrome Icon-->
+    <link rel="icon" href="../../../../Images/png/iice.png" type="image/x-icon">
+</head>
+
+<body id="body">
+    <div id="preloader"></div>
+    <!-- Navigation  -->
+    <nav id="navv" class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: hotpink;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Ice-Cream Shop</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login/Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flavours.html">Flavours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">Language</button>
+                        <div id="menu" class="langWrap dropdown-menu">
+                            <a class="engg active dropdown-item" href="#" language='english'>English</a>
+                            <a class="engg dropdown-item" href="#" language='arabic'> العربية</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div id="search-item">
+                            <input id="flavour-search" type="text" placeholder="Enter Your Search Here...">
+                            <button onclick="search()" id="search-button"><i class="fa fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="expand()"><i id="search" style="cursor: pointer;" class="fas fa-search fa-1x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="cart" href="#cart" class=" nav-item"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('../../../../Images//Resized/Web\ capture_9-8-2021_22427_www.google.com.jpeg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3><span class="Iceh3">Ice-Cream Shop</span>
+                            <rtl>عنوان</rtl>
+                        </h3>
+                        <p>
+                            <rtl>التجمع الخامس الدور الأول في دريمز مال خلف المحكمة</rtl>
+                        </p>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('../../../../Images/pexels-lukas-1352278.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Our Flavours</h3>
+                        <p>We have <span class="flavours">41</span> Flavours at our Ice-Cream Shop</p>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('../../../../Images/pexels-vlad-chețan-1752506.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Fustq Ice-Cream</h3>
+                        <p>One of the best Flavours at Our Store.</p>
+                    </div>
+                </div>
+                <!-- Slide Four - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('../../../../Images/pexels-avichal-lodhi-2819088-1.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Oreo Ice-Cream</h3>
+                        <p>The Oreo Ice-Cream is different at our Website .</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <h1 class="my-4" style="color: hotpink;">Welcome to Ice-Cream Shop</h1>
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img id="image" src="../../../../Images/png/Untitled-3.png" alt="">
+                    <h4 id="choclate" class="title card-header">Chocolate</h4>
+                    <div class="card-body">
+                        <p class="description card-text">Chocolate Ice-Cream with best taste and also with the best price. The Ice-Cream is all made with Natural Components</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button type="button" class="araba btn dropdown-toggle" data-toggle="dropdown">Add To Cart</button>
+                            <div class="dropdown-menu">
+                                <button id="btnn" class="liter dropdown-item"> 1 Liter <span class="price1">70 EGP</span></button>
+                                <a class="nos dropdown-item" href="#">1/2 Liter <span class="price">50 EGP</span></a>
+                                <a class="noss dropdown-item" href="#">1/4 Liter <span class="price">20 EGP</span></a>
+                                <a class="bolaa dropdown-item" href="#">Bola <span class="price2">10 EGP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="../../../../Images/png/Untitled-7.png" alt="">
+                    <h4 class="ftitle card-header">Fustq</h4>
+                    <div class="card-body">
+                        <p class="fdescription card-text">
+                            One of the best Flavours in our Ice-Cream Shop is the Fustq Flavour
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button type="button" class="faraba btn dropdown-toggle" data-toggle="dropdown">Add To Cart</button>
+                            <div class="dropdown-menu">
+                                <a class="fliter dropdown-item" href="#"> 1 Liter <span class="price1">70 EGP</span></a>
+                                <a class="fnos dropdown-item" href="#">1/2 Liter <span class="price">50 EGP</span></a>
+                                <a class="fnoss dropdown-item" href="#">1/4 Liter <span class="price">20 EGP</span></a>
+                                <a class="fbola dropdown-item" href="#">Bola <span class="price2">10 EGP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="../../../../Images/png/Untitled-4.png" alt="">
+                    <h4 class="vtitle card-header">Vanella</h4>
+                    <div class="card-body">
+                        <p class="vdescription card-text">Our Vanella is made of Natural milk and natural Components Really it's different</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button type="button" class="varaba btn dropdown-toggle" data-toggle="dropdown">Add To Cart</button>
+                            <div class="dropdown-menu">
+                                <a class="vliter dropdown-item" href="#"> 1 Liter <span class="price1">70 EGP</span></a>
+                                <a class="vnos dropdown-item" href="#">1/2 Liter <span class="price">50 EGP</span></a>
+                                <a class="vnoss dropdown-item" href="#">1/4 Liter <span class="price">20 EGP</span></a>
+                                <a class="vbola dropdown-item" href="#">Bola <span class="price2">10 EGP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="../../../../Images/png/Untitled-5.png" alt="">
+                    <h4 class="ctitle card-header">Cuppcino</h4>
+                    <div class="card-body">
+                        <p class="cdescription card-text">The Real Taste Of the Cuppcino is in Our Ice-Cream</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button type="button" class="caraba btn dropdown-toggle" data-toggle="dropdown">Add To Cart</button>
+                            <div class="dropdown-menu">
+                                <a class="cliter dropdown-item" href="#"> 1 Liter <span class="price1">70 EGP</span></a>
+                                <a class="cnos dropdown-item" href="#">1/2 Liter <span class="price">50 EGP</span></a>
+                                <a class="cnoss dropdown-item" href="#">1/4 Liter <span class="price">20 EGP</span></a>
+                                <a class="cbola dropdown-item" href="#">Bola <span class="price2">10 EGP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="../../../../Images/png/Untitled-100.png" alt="">
+                    <h4 class="ntitle card-header">Nutella</h4>
+                    <div class="card-body">
+                        <p class="ndescription card-text">Real Nutella in Our Ice-Cream</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button type="button" class="naraba btn dropdown-toggle" data-toggle="dropdown">Add To Cart</button>
+                            <div class="dropdown-menu">
+                                <a class="nliter dropdown-item" href="#"> 1 Liter <span class="price1">70 EGP</span></a>
+                                <a class="nnos dropdown-item" href="#">1/2 Liter <span class="price">50 EGP</span></a>
+                                <a class="nnoss dropdown-item" href="#">1/4 Liter <span class="price">20 EGP</span></a>
+                                <a class="nbola dropdown-item" href="#">Bola <span class="price2">10 EGP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="../../../../Images/png/Untitled-6.png" alt="">
+                    <h4 class="rtitle card-header">Roman</h4>
+                    <div class="card-body">
+                        <p class="rdescription card-text">For The Roman Lovers, We have unique taste for them</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button type="button" class="raraba btn dropdown-toggle" data-toggle="dropdown">Add To Cart</button>
+                            <div class="dropdown-menu">
+                                <a class="rliter dropdown-item" href="#"> 1 Liter <span class="price1">70 EGP</span></a>
+                                <a class="rnos dropdown-item" href="#">1/2 Liter <span class="price">50 EGP</span></a>
+                                <a class="rnoss dropdown-item" href="#">1/4 Liter <span class="price">20 EGP</span></a>
+                                <a class="rbola dropdown-item" href="#">Bola <span class="price2">10 EGP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="../../../../Images/png/pexels-david-disponett-2161649.jpg" alt="">
+                    <h4 class="stitle card-header">Strawberry</h4>
+                    <div class="card-body">
+                        <p class="sdescription card-text">Natural Strawberry Flavour is Really prestented in our Ice-Cream</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button type="button" class="saraba btn dropdown-toggle" data-toggle="dropdown">Add To Cart</button>
+                            <div class="dropdown-menu">
+                                <a class="sliter dropdown-item" href="#"> 1 Liter <span class="price1">70 EGP</span></a>
+                                <a class="snos dropdown-item" href="#">1/2 Liter <span class="price">50 EGP</span></a>
+                                <a class="snoss dropdown-item" href="#">1/4 Liter <span class="price">20 EGP</span></a>
+                                <a class="sbola dropdown-item" href="#">Bola <span class="price2">10 EGP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="../../../../Images/png/Untitled-8.png" alt="">
+                    <h4 class="ytitle card-header">Yousfy</h4>
+                    <div class="card-body">
+                        <p class="ydescription card-text">We have the Yousfy Taste which is not represented at any store except us</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button type="button" class="yaraba btn dropdown-toggle" data-toggle="dropdown">Add To Cart</button>
+                            <div class="dropdown-menu">
+                                <a class="yliter dropdown-item" href="#"> 1 Liter <span class="price1">70 EGP</span></a>
+                                <a class="ynos dropdown-item" href="#">1/2 Liter <span class="price">50 EGP</span></a>
+                                <a class="ynoss dropdown-item" href="#">1/4 Liter <span class="price">20 EGP</span></a>
+                                <a class="ybola dropdown-item" href="#">Bola <span class="price2">10 EGP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="../../../../Images/png/Untitled-00.png" alt="">
+                    <h4 class="btitle card-header">Banana</h4>
+                    <div class="card-body">
+                        <p class="bdescription card-text">Another Excptional Taste only at Our Shop which is the one of the most loved fruits which is The Banana...</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="dropdown">
+                            <button type="button" class="baraba btn dropdown-toggle" data-toggle="dropdown">Add To Cart</button>
+                            <div class="dropdown-menu">
+                                <a class="bliter dropdown-item" href="#"> 1 Liter <span class="price1">70 EGP</span></a>
+                                <a class="bnos dropdown-item" href="#">1/2 Liter <span class="price">50 EGP</span></a>
+                                <a class="bnos dropdown-item" href="#">1/4 Liter <span class="price">20 EGP</span></a>
+                                <a class="bbola dropdown-item" href="#">Bola <span class="price2">10 EGP</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Natural Flavours</h2>
+                <p>Our Ice-Cream is made Of Natural Components and Natural Milk</p>
+                <ul>
+                    <li>
+                        <strong>Natural Milk</strong>
+                    </li>
+                    <li>No Additional Chemicals</li>
+                    <li>Nice Services</li>
+                    <li>Deliveriy Service</li>
+                    <li>Facebook Page that recives Customers Reviews and Complains </li>
+                </ul>
+                <p>Ice-Cream Shop is a Shop that presents the best Ice-Cream Flavours and with Various Tastes that meats all the Customers needs and orders.</p>
+            </div>
+            <div class="col-lg-6">
+                <img width="400px" height="300px" src="../../../../Images/png/ice cream.png" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!--================== Cart Section =============== -->
+        <section id="cartt">
+        </section>
+        <hr>
+
+        <!-- Call to Action Section -->
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <p id="shop-description">Ice-Cream offers the best Ice-Cream with the best Taste and Price if you like to taste <span class="flav">Click The Button</span></p>
+            </div>
+            <div class="col-md-4">
+                <a id="fl" class="btn btn-lg  btn-block" style="background-color: hotpink; color: white;" href="D:\Ice-Cream Shop\Bootstrap+4\Bootstrap 4\05. Project\02. Finished Files\flavours.html">See All Flavours</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: hotpink;">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Ice-Cream Shop 2021 All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+<!-- Loader -->
+<script>
+    var body = document.getElementById("body")
+    var loader = document.getElementById("preloader")
+    var nav = document.getElementById("navv")
+    window.addEventListener("load", function() {
+        loader.style.display = "none"
+        loader.style.overflow = "scroll"
+        nav.style.display = "block"
+        body.style.overflowY = "scroll"
+    })
+
+    var searchInput = document.getElementById("flavour-search")
+    var searchButton = document.getElementById("search-button")
+    var searchItem = document.getElementById("search-item")
+
+    function expand() {
+        if (searchItem.style.display === "none") {
+            searchInput.style.display = "block"
+            searchButton.style.display = "block"
+            searchItem.style.display = "flex"
+        } else {
+            searchInput.style.display = "none"
+            searchButton.style.display = "none"
+            searchItem.style.display = "none"
+        }
+    }
+
+    function search() {
+        if (searchInput.value === 'choclate' | searchInput.value === "Choclate") {
+            location.href = "/#choclate"
+        }
+    }
+    searchButton.addEventListener("keyup", function(event) {
+        event.preventDefault()
+        if (event.keyCode === 13) {
+            searchButton.click
+            console.log("Clicked")
+        }
+    })
+</script>
+<!-- Translating Script -->
+<script src="../02. Finished Files/css/Java-Script/main.js"></script>
+<!-- Loading Script  -->
+<!-- <script src="load.js"></script> -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Cart Script  -->
+<script src="cart.js"></script>
+
+</html>

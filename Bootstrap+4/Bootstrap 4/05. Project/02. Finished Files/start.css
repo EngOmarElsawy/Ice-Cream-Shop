@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #C15B78, #F6C8CC, #EBF5F7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    margin-left: 1%;
+}
+
+h1 {
+    padding: 20px;
+    margin: 20px;
+    color: #E1A2C2;
+    font-weight: 800;
+    font-family: 'azo sans black';
+    text-align: center;
+}
+
+span {
+    color: #88C6EA;
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 20px 30px;
+    font-family: 'azo sans black';
+}
+
+button {
+    border: 2px solid;
+    border-color: white;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    background: transparent;
+    padding: 12px 25px;
+    position: absolute;
+    left: 40%;
+}
+
+.button:focus {
+    outline: none;
+}
+
+button:hover {
+    transition: ease-in-out;
+    transition-duration: 1s;
+    background-color: #88C6EA;
+}
+
+button img {
+    width: 15px;
+    margin-left: 10px;
+}
+
+.crystals {
+    width: 60px;
+    height: 100px;
+}

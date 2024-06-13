@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Login Form</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/modern-business.css" rel="stylesheet"> -->
+
+    <!-- Custom Style Made By Me  -->
+    <link rel="stylesheet" href="D:\Ice-Cream Shop\Bootstrap+4\Bootstrap 4\05. Project\02. Finished Files\css\loginstyle.css">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="D:\Ice-Cream Shop\fontawesome-free-5.15.3-web\css\all.min.css">
+    <!--  Fonts  -->
+    <link rel="stylesheet" href="D:\Ice-Cream Shop\Fonts\fonts.css">
+    <!--Chrome Icon-->
+    <link rel="icon" href="../../../../Images/png/iice.png" type="image/x-icon">
+    <!-- Hamer Smith Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Resgister</button>
+            </div>
+            <!-- <div class="social-icons">
+                <img src="../../../../Images/fb.png" alt="">
+                <img src="../../../../Images/tw.png" alt="">
+                <img src="../../../../Images/gp.png" alt="">
+            </div> -->
+            <form id="login" action="" class="input-group">
+                <input type="email" class="input-field" placeholder="User Id" id="email">
+                <input type="password" class="input-field" placeholder="Enter Password" id="pwd">
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="button" id="enter" class="submit-btn" onclick="check()">Login</button>
+            </form>
+            <form id="register" action="" class="input-group">
+                <input type="email" class="input-field" placeholder="Email Id" id="newuser">
+                <input type="text" class="input-field" placeholder="Enter Password" id="newPass">
+                <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
+                <button type="button" class="submit-btn" id="reg" onclick="create()">Resgister</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    var loader = document.getElementById("preloader")
+
+    window.addEventListener("load", function() {
+        loader.style.display = "none"
+    })
+</script>
+<script>
+    var x = document.getElementById('login')
+    var y = document.getElementById('register')
+    var z = document.getElementById('btn')
+
+    function register() {
+        x.style.left = "-400px"
+        y.style.left = "50px"
+        z.style.left = "110px"
+    }
+
+    function login() {
+        x.style.left = "50px"
+        y.style.left = "450px"
+        z.style.left = "0"
+    }
+</script>
+
+
+<!-- Bootstrap core JavaScript -->
+<!-- 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+<script src="login.js"></script>
+<!-- Sweet alert  -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</html>
